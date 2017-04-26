@@ -1,0 +1,96 @@
+/*
+* @Author: JMW
+* @Date:   2017-04-19 14:58:35
+* @Last Modified by:   JMW
+* @Last Modified time: 2017-04-20 14:40:13
+*/
+/* 碑刻简介 */
+.introduction{
+	width:1400px;
+	padding-top:50px;
+	margin:10px auto;
+	background:#fff;
+}
+.introduction h2,.fastRead h2{
+	font-size: 18px;
+    margin:0 0 20px 80px;
+}
+.introduction div p{
+	padding: 30px 0;
+    line-height: 26px;
+    text-indent: 2em;
+    letter-spacing: 2px;
+    width: 1244px;
+    margin:0 auto;
+}
+
+/* 快速浏览 */
+.fastRead{
+	width:1400px;
+	padding:50px 0;
+	margin:10px auto 0;
+	background:#fff;
+}
+.fastRead ul{
+	width: 1280px;
+	margin:0 auto;
+}
+.fastRead ul li{
+	float: left;
+	margin:20px;
+	border:1px solid #ddd;
+	position: relative;
+	width: 278px;
+	height: 158px;
+	overflow: hidden;
+}
+.fastRead ul li img{
+	position: relative;
+	left:0;
+	top:0;
+	width: 100%;
+}
+.fastRead ul li .ovrly{
+	background: rgba(12, 51, 67, 0.7);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.fastRead ul li:hover .ovrly{
+	opacity:1;
+}
+.fastRead ul li .buttons{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+}
+.fastRead ul li .buttons .fa{
+    display: inline-block;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0;
+    position: relative;
+    -webkit-transition: all 0.3s, color 0.1s 0.3s;
+    -moz-transition: all 0.3s, color 0.1s 0.3s;
+    -o-transition: all 0.3s, color 0.1s 0.3s;
+    transition: all 0.3s, color 0.1s 0.3s;
+    color: #fff;
+}
+.fastRead ul li:hover .fa{
+	opacity: 1;
+    left: 0;
+}

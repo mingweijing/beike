@@ -1,0 +1,199 @@
+/*
+* @Author: JMW
+* @Date:   2017-04-20 14:39:17
+* @Last Modified by:   JMW
+* @Last Modified time: 2017-04-20 14:40:11
+*/
+/* 头部 */
+.header{
+	width:expression(document.body.clientWidth <= 1440? "1440px": "auto");
+	min-width:1440px;
+	height: 90px;
+	background: #133348;
+	line-height: 90px;
+	vertical-align: middle;
+}
+.header .logo{
+	float: left;
+	margin: 24px 0 0 50px;
+
+}
+.header .login{
+	float: right;
+	margin:0 70px 0 60px;
+}
+.header .login span{
+	font-size:14px;
+	color:#d2d5d8;
+	margin-left:12px;
+}
+.header .login img{
+	margin-top: 31px;
+}
+.header .beike{
+	float: right;
+	margin-top: 17px;
+}
+.header h2{
+	font-size: 28px;
+	color:#d2d5d8;
+	float: left;
+	margin-left:30px;
+	font-style: italic;
+}
+
+/* 内容 */
+.content{
+	background:#eee;
+}
+
+/* 导航 */
+#breadcrumbs{
+	height:2.7em;
+	width: 1398px;
+	margin:0 auto;
+	background:#fff;
+}
+#breadcrumbs li{
+	float:left;
+	line-height:2.7em;
+	color:#777;
+	padding-left:.85em;
+}		
+#breadcrumbs li a{
+	background: url(../images/breadcrums.jpg) no-repeat right center;
+	display:block;
+	padding:0 15px 0 0;
+}							
+#breadcrumbs li a:link,#breadcrumbs li a:visited{
+	color:#777;
+	text-decoration:none;
+}	
+a:link,a:visited,#breadcrumbs li a:hover,#breadcrumbs li a:focus {
+	color:#222;
+}	
+
+/* 选项卡 */
+#box{
+	width:1400px;
+	background:#fff;
+	margin:10px auto;
+}	
+#box .option{
+	width: 114px;
+	height: 34px;
+	font-size:18px;
+	margin-left:-2px;
+	cursor: pointer;
+}
+#box .active{
+	background: #95a9bf;
+	color:#fff;
+	border-top:2px solid red;
+	padding-bottom: 1px;
+}
+#box .op-con{
+	width:100%;
+	display: none;
+	background:#95a9bf;
+	padding-bottom: 35px;
+}
+#box .op-con li{
+	width: 280px;
+	float:left;
+	padding:35px 0 0 50px;
+	overflow: hidden;
+}
+#box .op-con li span{
+	float: left;
+}
+#box .op-con li input{
+	float: right;
+	width: 190px;
+	border:1px solid #bdbcbc;
+	padding-left:20px;
+	font-size:14px;
+	height: 28px;
+	margin-top: -4px;
+}
+#box .op-con li select{
+	float: right;
+	width: 210px;
+	font-size:14px;
+	height: 28px;
+}
+#box .op-con li select option{
+	font-size:14px;
+}
+#box .op-con li .button{
+	width: 80px;
+    height: 40px;
+    padding: 0;
+    margin-top: -10px;
+    background:#968477;
+    color:#fff;
+    cursor: pointer;
+    -moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+}
+#box .op-con li .button:hover { 
+	background-color: #e67d31;
+	color: #fff;
+}
+#box .op-con li .button:active { 
+	-webkit-transform: translateY(1px); 
+	-moz-transform: translateY(1px); 
+}
+#box .op-con li .match{
+	float: left;
+    margin-left: 10px;
+    width:16px;
+    height:16px;
+    margin-top:4px;
+}
+
+/* 底部 */
+.footer{
+	width:expression(document.body.clientWidth <= 1440? "1440px": "auto");
+	min-width:1440px;
+	height: 50px;
+	background: #133348;
+	line-height: 50px;
+}
+/* 返回顶部 */
+.cbbfixed {
+	position: fixed;
+	right: 10px;
+	transition: bottom ease .3s;
+	bottom: -85px;
+	z-index: 999;
+	cursor:pointer;
+}
+.cbbfixed .cbbtn {
+	width: 40px;
+	height: 40px;
+	display: block;
+	background-color: #02a2aa;
+	text-align: center;
+}
+.cbbfixed .cbbtn span{
+	font-size: 12px;
+	color:#fff;
+}
+.cbbfixed .gotop {
+	transition: background-color ease .3s;
+	margin-top: 1px;
+}
+.cbbfixed .gotop .up-icon{
+	float:left;
+	margin:14px 0 0 9px;
+	width:23px;
+	height:12px;
+	background: url(../images/side-icon02.png);
+}
+.cbbfixed .gotop:hover {
+	background-color:#2c2d2e;
+}

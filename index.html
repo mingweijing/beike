@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<title>历代碑刻检索系统-明代</title>
+        <meta charset="utf-8"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="renderer" content="webkit"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=800"/>
+        <meta name="keywords" content="碑刻,历代碑刻,碑刻检索,明代碑刻,历代碑刻检索系统"/>
+        <meta name="description" content='近代碑刻数字化典藏与应用平台是应北京师范大学民俗典籍文字研究中心重大课题"近代碑刻与手写文献数字化典藏及属性描述"的研究需求构建起来的，目的是要提供一个集近代碑刻（宋元明清）的搜集、整理、加工、保存、检索为一体的计算机网络支持环境，并在此基础上针对近代碑刻的各项研究开发相关的应用功能，首项任务是辅助近代碑刻实用楷书字形的采集与整理研究。'/> 
+        <link rel='icon' href='images/pic.ico' type='image/x-ico'/> 
+        <link rel="stylesheet" href="css/base.css"/>
+        <link rel="stylesheet" href="css/common.css"/>
+        <link rel="stylesheet" href="css/index.css"/>
+    </head>
+    <body>
+    	<!-- 头部 -->
+    	<div class="header clearfix">
+    		<a href="index.html"><img src="images/logo.png" height="42" width="190" alt="" class="logo"/></a>
+    		<h2>历代碑刻检索系统-明代</h2>
+    		<div class="login">
+    			<img src="images/head.png" height="28" width="28" alt=""/>
+    			<span>登录</span>
+    			<span>注册</span>
+    		</div>
+    		<img src="images/beike.png" height="55" width="587" alt="" class="beike">
+    	</div>
+    	<!-- 头部end -->
+    	<!-- 内容 -->
+    	<div class="content">
+    		<!-- 导航 -->
+    		<ul id="breadcrumbs">
+			    <li><a href="">首页</a></li>
+			    <li class="breadcrumbs2">碑刻检索</li>
+			</ul>
+    		<!-- 导航end -->
+    		<!-- 选项卡 -->
+    		<div id="box" class="box">
+				<div>
+					<input class="option active" type="button" value="碑刻检索" style="margin:0;">
+					<input class="option" type="button" value="释文检索">
+					<input class="option" type="button" value="单字检索">
+				</div>
+				<div>
+					<ul class="op-con clearfix" style="display:block;">
+						<li>
+							<span>碑名</span><input type="text" placeholder="请输入碑名"/>
+						</li>
+						<li>
+							<span>关键词</span><input type="text" placeholder="请输入关键词"/>
+						</li>
+						<li>
+							<span>语种</span>
+							<select name="language">
+	                            <option value="0">--请选择--</option>
+	                            <option value="39">汉文</option>
+	                            <option value="40">梵文</option>
+	                            <option value="76">汉文、拉丁文合璧</option>
+	                            <option value="78">蒙文</option>
+	                            <option value="79">藏文</option>
+	                            <option value="80">满汉合璧</option>
+	                            <option value="81">满文</option>
+	                            <option value="82">汉满蒙合文</option>
+	                            <option value="83">汉藏合文</option>
+	                            <option value="84">汉、藏、满、蒙</option>
+	                            <option value="85">阿拉伯文</option>
+	                            <option value="87">汉文、梵文</option>
+	                            <option value="88">維文、漢文合璧</option>
+	                            <option value="89">汉文、俄文合璧</option>
+	                            <option value="90">蒙文、藏文合璧</option>
+	                            <option value="91">汉蒙满梵合文</option>
+	                            <option value="92">阿拉伯文、汉文合璧</option>
+	                        </select>
+						</li>
+						<li>
+							<span>字体</span>
+							<select name="ziti">
+		                        <option value="0">--请选择--</option>
+								<option value="48">楷</option>
+								<option value="51">隶</option>
+								<option value="71">篆</option>
+								<option value="75">金</option>
+							</select>
+						</li>
+						<li>
+							<span>书体</span>
+							<select name="shuti">
+	                            <option value="0">--请选择--</option>
+								<option value="52">正书</option>
+								<option value="54">行书</option>
+								<option value="55">隶书</option>
+								<option value="56">小篆</option>
+								<option value="72">行楷</option>
+								<option value="73">行草</option>
+								<option value="74">草书</option>
+								<option value="86">行、正间书</option>
+							</select>
+						</li>
+						<li>
+							<span>文体</span>
+							<select id="wenti" name="filter_EQS_wenti">
+								<option value="0">--请选择--</option>
+								<option value="19">记功颂德碑</option>
+								<option value="20">历史纪念碑</option>
+								<option value="21">名贤功绩碑</option>
+								<option value="22">英杰纪念碑</option>
+								<option value="23">律令示禁碑</option>
+								<option value="24">经书典籍碑</option>
+								<option value="25">宗教纪念碑</option>
+								<option value="26">灾荒民情碑</option>
+								<option value="27">民规民约碑</option>
+								<option value="28">民间记事碑</option>
+								<option value="29">佛道经文碑</option>
+								<option value="30">格言篇言碑</option>
+								<option value="31">民俗风习碑</option>
+								<option value="32">书法典范碑</option>
+								<option value="33">传奇故事碑</option>
+								<option value="34">诗文观赏碑</option>
+								<option value="77">墓志铭</option>
+								<option value="93">官府记事碑</option>
+								<option value="94">集名碑</option>
+								<option value="95">其它</option>
+								<option value="96">题字碑</option>
+							</select>
+						</li>
+						<li>
+							<span>国图分类</span>
+							<select id="ccl" name="filter_EQS_ccl">
+								<option value="">--请选择--</option>
+								<option value="G 文化、科学、教育、体育">G 文化、科学、教育、体育</option>
+								<option value="G40 教育学">G40 教育学</option>
+								<option value="G41 思想政治教育、德育">G41 思想政治教育、德育</option>
+								<option value="G42 教学理论">G42 教学理论</option>
+								<option value="G43 电化教育">G43 电化教育</option>
+								<option value="G44 教育心理学">G44 教育心理学</option>
+								<option value="G45 教师与学生">G45 教师与学生</option>
+								<option value="G47 学校管理">G47 学校管理</option>
+								<option value="G48 学校建筑和设备管理">G48 学校建筑和设备管理</option>
+								<option value="G51 世界教育事业">G51 世界教育事业</option>
+								<option value="G52 中国教育事业">G52 中国教育事业</option>
+								<option value="G53/57 各国教育事业">G53/57 各国教育事业</option>
+								<option value="G61 学前教育、幼儿教育">G61 学前教育、幼儿教育</option>
+								<option value="G62 初等教育">G62 初等教育</option>
+								<option value="G63 中等教育">G63 中等教育</option>
+								<option value="G64 高等教育">G64 高等教育</option>
+								<option value="G65 师范教育">G65 师范教育</option>
+								<option value="G71 职业技术教育">G71 职业技术教育</option>
+								<option value="G72 成人教育、业余教育">G72 成人教育、业余教育</option>
+								<option value="G74 华侨教育、侨民教育">G74 华侨教育、侨民教育</option>
+								<option value="G75 少数民族教育">G75 少数民族教育</option>
+								<option value="G76 特殊教育">G76 特殊教育</option>
+								<option value="G77 社会教育">G77 社会教育</option>
+								<option value="G78 家庭教育">G78 家庭教育</option>
+								<option value="G79 自学">G79 自学</option>
+							</select>
+						</li>
+						<li>
+							<span>精确匹配</span>
+							<input type="button" value="查询" class="button">
+							<input type="checkbox" class="match">
+						</li>
+					</ul>
+					<ul class="op-con clearfix">
+						<li>
+							<span>释文</span><input type="text" placeholder="请输入释文"/>
+						</li>
+						<li>
+							<span>关键词</span><input type="text" placeholder="请输入关键词"/>
+						</li>
+						<li>
+							<span>语种</span>
+							<select name="language">
+	                            <option value="0">--请选择--</option>
+	                            <option value="39">汉文</option>
+	                            <option value="40">梵文</option>
+	                            <option value="76">汉文、拉丁文合璧</option>
+	                            <option value="78">蒙文</option>
+	                            <option value="79">藏文</option>
+	                            <option value="80">满汉合璧</option>
+	                            <option value="81">满文</option>
+	                            <option value="82">汉满蒙合文</option>
+	                            <option value="83">汉藏合文</option>
+	                            <option value="84">汉、藏、满、蒙</option>
+	                            <option value="85">阿拉伯文</option>
+	                            <option value="87">汉文、梵文</option>
+	                            <option value="88">維文、漢文合璧</option>
+	                            <option value="89">汉文、俄文合璧</option>
+	                            <option value="90">蒙文、藏文合璧</option>
+	                            <option value="91">汉蒙满梵合文</option>
+	                            <option value="92">阿拉伯文、汉文合璧</option>
+	                        </select>
+						</li>
+						<li>
+							<span>字体</span>
+							<select name="ziti">
+		                        <option value="0">--请选择--</option>
+								<option value="48">楷</option>
+								<option value="51">隶</option>
+								<option value="71">篆</option>
+								<option value="75">金</option>
+							</select>
+						</li>
+						<li>
+							<span>书体</span>
+							<select name="shuti">
+	                            <option value="0">--请选择--</option>
+								<option value="52">正书</option>
+								<option value="54">行书</option>
+								<option value="55">隶书</option>
+								<option value="56">小篆</option>
+								<option value="72">行楷</option>
+								<option value="73">行草</option>
+								<option value="74">草书</option>
+								<option value="86">行、正间书</option>
+							</select>
+						</li>
+						<li>
+							<span>文体</span>
+							<select id="wenti" name="filter_EQS_wenti">
+								<option value="0">--请选择--</option>
+								<option value="19">记功颂德碑</option>
+								<option value="20">历史纪念碑</option>
+								<option value="21">名贤功绩碑</option>
+								<option value="22">英杰纪念碑</option>
+								<option value="23">律令示禁碑</option>
+								<option value="24">经书典籍碑</option>
+								<option value="25">宗教纪念碑</option>
+								<option value="26">灾荒民情碑</option>
+								<option value="27">民规民约碑</option>
+								<option value="28">民间记事碑</option>
+								<option value="29">佛道经文碑</option>
+								<option value="30">格言篇言碑</option>
+								<option value="31">民俗风习碑</option>
+								<option value="32">书法典范碑</option>
+								<option value="33">传奇故事碑</option>
+								<option value="34">诗文观赏碑</option>
+								<option value="77">墓志铭</option>
+								<option value="93">官府记事碑</option>
+								<option value="94">集名碑</option>
+								<option value="95">其它</option>
+								<option value="96">题字碑</option>
+							</select>
+						</li>
+						<li>
+							<span>国图分类</span>
+							<select id="ccl" name="filter_EQS_ccl">
+								<option value="">--请选择--</option>
+								<option value="G 文化、科学、教育、体育">G 文化、科学、教育、体育</option>
+								<option value="G40 教育学">G40 教育学</option>
+								<option value="G41 思想政治教育、德育">G41 思想政治教育、德育</option>
+								<option value="G42 教学理论">G42 教学理论</option>
+								<option value="G43 电化教育">G43 电化教育</option>
+								<option value="G44 教育心理学">G44 教育心理学</option>
+								<option value="G45 教师与学生">G45 教师与学生</option>
+								<option value="G47 学校管理">G47 学校管理</option>
+								<option value="G48 学校建筑和设备管理">G48 学校建筑和设备管理</option>
+								<option value="G51 世界教育事业">G51 世界教育事业</option>
+								<option value="G52 中国教育事业">G52 中国教育事业</option>
+								<option value="G53/57 各国教育事业">G53/57 各国教育事业</option>
+								<option value="G61 学前教育、幼儿教育">G61 学前教育、幼儿教育</option>
+								<option value="G62 初等教育">G62 初等教育</option>
+								<option value="G63 中等教育">G63 中等教育</option>
+								<option value="G64 高等教育">G64 高等教育</option>
+								<option value="G65 师范教育">G65 师范教育</option>
+								<option value="G71 职业技术教育">G71 职业技术教育</option>
+								<option value="G72 成人教育、业余教育">G72 成人教育、业余教育</option>
+								<option value="G74 华侨教育、侨民教育">G74 华侨教育、侨民教育</option>
+								<option value="G75 少数民族教育">G75 少数民族教育</option>
+								<option value="G76 特殊教育">G76 特殊教育</option>
+								<option value="G77 社会教育">G77 社会教育</option>
+								<option value="G78 家庭教育">G78 家庭教育</option>
+								<option value="G79 自学">G79 自学</option>
+							</select>
+						</li>
+						<li>
+							<span>精确匹配</span>
+							<input type="button" value="查询" class="button">
+							<input type="checkbox" class="match">
+						</li>
+					</ul>
+					<ul class="op-con clearfix">
+						<li>
+							<span>单字</span><input type="text" placeholder="请输入单字"/>
+						</li>
+						<li>
+							<span>关键词</span><input type="text" placeholder="请输入关键词"/>
+						</li>
+						<li>
+							<span>语种</span>
+							<select name="language">
+	                            <option value="0">--请选择--</option>
+	                            <option value="39">汉文</option>
+	                            <option value="40">梵文</option>
+	                            <option value="76">汉文、拉丁文合璧</option>
+	                            <option value="78">蒙文</option>
+	                            <option value="79">藏文</option>
+	                            <option value="80">满汉合璧</option>
+	                            <option value="81">满文</option>
+	                            <option value="82">汉满蒙合文</option>
+	                            <option value="83">汉藏合文</option>
+	                            <option value="84">汉、藏、满、蒙</option>
+	                            <option value="85">阿拉伯文</option>
+	                            <option value="87">汉文、梵文</option>
+	                            <option value="88">維文、漢文合璧</option>
+	                            <option value="89">汉文、俄文合璧</option>
+	                            <option value="90">蒙文、藏文合璧</option>
+	                            <option value="91">汉蒙满梵合文</option>
+	                            <option value="92">阿拉伯文、汉文合璧</option>
+	                        </select>
+						</li>
+						<li>
+							<span>字体</span>
+							<select name="ziti">
+		                        <option value="0">--请选择--</option>
+								<option value="48">楷</option>
+								<option value="51">隶</option>
+								<option value="71">篆</option>
+								<option value="75">金</option>
+							</select>
+						</li>
+						<li>
+							<span>书体</span>
+							<select name="shuti">
+	                            <option value="0">--请选择--</option>
+								<option value="52">正书</option>
+								<option value="54">行书</option>
+								<option value="55">隶书</option>
+								<option value="56">小篆</option>
+								<option value="72">行楷</option>
+								<option value="73">行草</option>
+								<option value="74">草书</option>
+								<option value="86">行、正间书</option>
+							</select>
+						</li>
+						<li>
+							<span>文体</span>
+							<select id="wenti" name="filter_EQS_wenti">
+								<option value="0">--请选择--</option>
+								<option value="19">记功颂德碑</option>
+								<option value="20">历史纪念碑</option>
+								<option value="21">名贤功绩碑</option>
+								<option value="22">英杰纪念碑</option>
+								<option value="23">律令示禁碑</option>
+								<option value="24">经书典籍碑</option>
+								<option value="25">宗教纪念碑</option>
+								<option value="26">灾荒民情碑</option>
+								<option value="27">民规民约碑</option>
+								<option value="28">民间记事碑</option>
+								<option value="29">佛道经文碑</option>
+								<option value="30">格言篇言碑</option>
+								<option value="31">民俗风习碑</option>
+								<option value="32">书法典范碑</option>
+								<option value="33">传奇故事碑</option>
+								<option value="34">诗文观赏碑</option>
+								<option value="77">墓志铭</option>
+								<option value="93">官府记事碑</option>
+								<option value="94">集名碑</option>
+								<option value="95">其它</option>
+								<option value="96">题字碑</option>
+							</select>
+						</li>
+						<li>
+							<span>国图分类</span>
+							<select id="ccl" name="filter_EQS_ccl">
+								<option value="">--请选择--</option>
+								<option value="G 文化、科学、教育、体育">G 文化、科学、教育、体育</option>
+								<option value="G40 教育学">G40 教育学</option>
+								<option value="G41 思想政治教育、德育">G41 思想政治教育、德育</option>
+								<option value="G42 教学理论">G42 教学理论</option>
+								<option value="G43 电化教育">G43 电化教育</option>
+								<option value="G44 教育心理学">G44 教育心理学</option>
+								<option value="G45 教师与学生">G45 教师与学生</option>
+								<option value="G47 学校管理">G47 学校管理</option>
+								<option value="G48 学校建筑和设备管理">G48 学校建筑和设备管理</option>
+								<option value="G51 世界教育事业">G51 世界教育事业</option>
+								<option value="G52 中国教育事业">G52 中国教育事业</option>
+								<option value="G53/57 各国教育事业">G53/57 各国教育事业</option>
+								<option value="G61 学前教育、幼儿教育">G61 学前教育、幼儿教育</option>
+								<option value="G62 初等教育">G62 初等教育</option>
+								<option value="G63 中等教育">G63 中等教育</option>
+								<option value="G64 高等教育">G64 高等教育</option>
+								<option value="G65 师范教育">G65 师范教育</option>
+								<option value="G71 职业技术教育">G71 职业技术教育</option>
+								<option value="G72 成人教育、业余教育">G72 成人教育、业余教育</option>
+								<option value="G74 华侨教育、侨民教育">G74 华侨教育、侨民教育</option>
+								<option value="G75 少数民族教育">G75 少数民族教育</option>
+								<option value="G76 特殊教育">G76 特殊教育</option>
+								<option value="G77 社会教育">G77 社会教育</option>
+								<option value="G78 家庭教育">G78 家庭教育</option>
+								<option value="G79 自学">G79 自学</option>
+							</select>
+						</li>
+						<li>
+							<span>精确匹配</span>
+							<input type="button" value="查询" class="button">
+							<input type="checkbox" class="match">
+						</li>	
+					</ul>
+				</div>
+			</div>
+    		<!-- 选项卡end -->
+    		<!-- 碑刻简介 -->
+    		<div class="introduction">
+    			<h2>碑刻系统简介</h2>
+    			<div>
+    				<p>近代碑刻数字化典藏与应用平台是应北京师范大学民俗典籍文字研究中心重大课题"近代碑刻与手写文献数字化典藏及属性描述"的研究需求构建起来的，目的是要提供一个集近代碑刻（宋元明清）的搜集、整理、加工、保存、检索为一体的计算机网络支持环境，并在此基础上针对近代碑刻的各项研究开发相关的应用功能，首项任务是辅助近代碑刻实用楷书字形的采集与整理研究。</p>
+    			</div>
+    		</div>
+    		<!-- 碑刻简介end -->
+    		<!-- 快速浏览 -->
+    		<div class="fastRead">
+    			<h2>快速浏览</h2>
+    			<ul class="clearfix">
+    				<li>
+    					<img src="images/1.jpg" alt="">
+    					<div class="ovrly"></div>
+    					<div class="buttons">
+    						<a href="" class="fa">薩哈拶釋哩塔銘</a>
+    					</div>
+    				</li>
+    				<li>
+    					<img src="images/2.jpg" alt="">
+    					<div class="ovrly"></div>
+    					<div class="buttons">
+    						<a href="" class="fa">思璧道行碑</a>
+    					</div>
+    				</li>
+    				<li>
+    					<img src="images/3.jpg" alt="">
+    					<div class="ovrly"></div>
+    					<div class="buttons">
+    						<a href="" class="fa">國子監學制碑</a>
+    					</div>
+    				</li>
+    				<li>
+    					<img src="images/4.jpg" alt="">
+    					<div class="ovrly"></div>
+    					<div class="buttons">
+    						<a href="" class="fa">薩哈拶釋哩塔銘</a>
+    					</div>
+    				</li>
+    				<li>
+    					<img src="images/5.jpg" alt="">
+    					<div class="ovrly"></div>
+    					<div class="buttons">
+    						<a href="" class="fa">皇后臺龍王廟記</a>
+    					</div>
+    				</li>
+    				<li>
+    					<img src="images/6.jpg" alt="">
+    					<div class="ovrly"></div>
+    					<div class="buttons">
+    						<a href="" class="fa">琴臺記</a>
+    					</div>
+    				</li>
+    				<li>
+    					<img src="images/7.jpg" alt="">
+    					<div class="ovrly"></div>
+    					<div class="buttons">
+    						<a href="" class="fa">遷玄奘頂骨塔記</a>
+    					</div>
+    				</li>
+    				<li>
+    					<img src="images/8.jpg" alt="">
+    					<div class="ovrly"></div>
+    					<div class="buttons">
+    						<a href="" class="fa">國子監學制碑</a>
+    					</div>
+    				</li>
+    			</ul>
+    		</div>
+    		<!-- 快速浏览end -->
+    	</div>
+    	<!-- 内容end -->
+    	<!-- 尾部 -->
+    	<div class="footer"></div>
+    	<!-- 尾部end -->
+    </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+	<script src="js/backtop.js"></script>
+	<script src="js/index.js"></script>
+</html>
